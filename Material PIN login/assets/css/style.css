@@ -1,0 +1,733 @@
+﻿html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/****-----start-body----****/
+body {
+    background: #3aada9;
+    font-family: 'Cabin', sans-serif;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 80%;
+}
+
+body a, form li, .submit input[type="submit"] {
+    transition: 0.1s all;
+    -webkit-transition: 0.1s all;
+    -moz-transition: 0.1s all;
+    -o-transition: 0.1s all;
+}
+
+form {
+    padding: 12% 12%;
+    height: 28em;
+}
+
+    form li {
+        border: none;
+        list-style: none;
+        margin-bottom: 25px;
+        width: 75%;
+        background: #dfdfdf;
+        margin-left: 45px;
+    }
+
+input[type="text"], input[type="password"] {
+    width: 50%;
+    padding: 0.2em 1.7em 0.2em 1.7em;
+    color: #858282;
+    font-size: 40px;
+    outline: none;
+    background: none;
+    font-weight: 500;
+    border: none;
+    margin-left: 15%;
+}
+
+.submit {
+    border-bottom: 1px dashed #999;
+    padding: 23px 0;
+}
+
+    .submit input[type="submit"] {
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        padding: 13px 10px;
+        width: 100%;
+        border: none;
+        background: #ffc50c;
+    }
+
+input[type="submit"]:hover {
+    background: #D13E2F;
+}
+
+img {
+    max-width: 120%;
+}
+
+/*---login-02---------*/
+.two-login-head {
+    background: #702c91;
+    padding: 1em 1em;
+    text-align: center;
+    position: relative;
+}
+
+    .two-login-head h2 {
+        font-size: 2em;
+        color: #fff;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .two-login-head lable {
+        background: url('../images/tip2.png') no-repeat 0px 0px;
+        width: 30px;
+        height: 13px;
+        position: absolute;
+        bottom: -11px;
+        left: 203px;
+        display: inline-block;
+    }
+
+
+.two-login {
+    width: 25%;
+    margin: 5% auto;
+    background: #fff;
+    text-align: center;
+    border-bottom: 3px solid #1c817c;
+}
+
+.two-login-head h1 {
+    font-size: 2em;
+    color: #fff;
+    font-weight: 500;
+}
+
+form.two {
+    padding: 12% 9%;
+}
+
+    form.two li {
+        border: none;
+        list-style: none;
+        margin-bottom: 25px;
+        width: 100%;
+        background: #dfdfdf;
+    }
+
+.login-02 {
+    margin-top: 9em;
+}
+
+form.two input[type="text"], form.two input[type="password"] {
+    width: 60%;
+    padding: 0.8em 4em 0.8em 1.7em;
+    color: #858282;
+    font-size: 17px;
+    outline: none;
+    background: none;
+    font-weight: 500;
+    border: none;
+}
+
+.submit.two {
+    border: none;
+    padding: 10px 15px 5px 5px;
+    float: left;
+}
+
+    .submit.two input[type="button"] {
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        padding: 13px 10px;
+        width: 80px;
+        height: 80px;
+        border: none;
+        background: #702c91;
+    }
+
+        .submit.two input[type="button"]:hover {
+            background: #ffc50c;
+        }
+
+    .submit.two input[type="submit"] {
+        font-size: 30px;
+        font-weight: 400;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        padding: 13px 10px;
+        width: 80px;
+        height: 80px;
+        border: none;
+        background: #702c91;
+    }
+
+
+        .submit.two input[type="submit"]:hover {
+            background: #ffc50c;
+        }
+
+.btnMarginLeft {
+    margin-left: 10%;
+}
+
+.mediaBtnMarginTop {
+    margin-top: 10px;
+}
+/*----- RESPONSIVE DESIGN------*/
+
+@media only screen and (max-width:1600px) {
+    .three-login, .two-login, .one-login {
+        width: 30%;
+    }
+
+    form {
+        padding: 12% 8%;
+        height: 28em;
+    }
+
+        form li {
+            border: none;
+            list-style: none;
+            margin-bottom: 25px;
+            width: 75%;
+            background: #dfdfdf;
+            margin-left: 55px;
+        }
+
+    .btnMarginLeft {
+        margin-left: 15%;
+    }
+
+    input[type="text"], input[type="password"] {
+        width: 50%;
+        padding: 0.2em 1.7em 0.2em 1.7em;
+        color: #858282;
+        font-size: 40px;
+        outline: none;
+        background: none;
+        font-weight: 500;
+        border: none;
+        margin-left: 17%;
+    }
+}
+
+@media only screen and (max-width:1440px) {
+    .three-login, .two-login, .one-login {
+        width: 31%;
+    }
+
+    .login-02 {
+        margin-top: 0em;
+    }
+
+    .two-login {
+        width: 25%;
+        margin: 0% auto;
+        margin-top: 5em;
+        background: #fff;
+        text-align: center;
+        border-bottom: 3px solid#1c817c;
+    }
+
+    .btnMarginLeft {
+        margin-left: 6%;
+    }
+
+    .submit.two input[type="submit"] {
+        font-size: 30px;
+        font-weight: 400;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        padding: 13px 10px;
+        width: 70px;
+        height: 70px;
+        border: none;
+        background: #702c91;
+    }
+
+    input[type="password"] {
+        width: 50%;
+        padding: 0.2em 1.7em 0.2em 1.7em;
+        color: #858282;
+        font-size: 40px;
+        outline: none;
+        background: none;
+        font-weight: 500;
+        border: none;
+        margin-left: 15%;
+    }
+
+    form li {
+        border: none;
+        list-style: none;
+        margin-bottom: 25px;
+        width: 90%;
+        background: #dfdfdf;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width:1366px) {
+    .three-login, .two-login, .one-login {
+        width: 32%;
+    }
+
+    .btnMarginLeft {
+        margin-left: 15%;
+    }
+
+    .submit.two input[type="submit"] {
+        font-size: 30px;
+        font-weight: 400;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        padding: 13px 10px;
+        width: 70px;
+        height: 70px;
+        border: none;
+        background: #702c91;
+    }
+
+    input[type="password"] {
+        width: 50%;
+        padding: 0.2em 1.7em 0.2em 1.7em;
+        color: #858282;
+        font-size: 40px;
+        outline: none;
+        background: none;
+        font-weight: 500;
+        border: none;
+        margin-left: 15%;
+    }
+
+    form li {
+        border: none;
+        list-style: none;
+        margin-bottom: 25px;
+        width: 80%;
+        background: #dfdfdf;
+        margin-left: 36px;
+    }
+}
+
+@media only screen and (max-width:1280px) {
+    .three-login, .two-login, .one-login {
+        width: 32%;
+    }
+
+    .btnMarginLeft {
+        margin-left: 15%;
+    }
+
+    .submit.two input[type="submit"] {
+        font-size: 30px;
+        font-weight: 400;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        padding: 13px 10px;
+        width: 60px;
+        height: 60px;
+        border: none;
+        background: #702c91;
+    }
+
+    input[type="password"] {
+        width: 50%;
+        padding: 0.2em 1.7em 0.2em 1.7em;
+        color: #858282;
+        font-size: 40px;
+        outline: none;
+        background: none;
+        font-weight: 500;
+        border: none;
+        margin-left: 15%;
+    }
+
+    form li {
+        border: none;
+        list-style: none;
+        margin-bottom: 25px;
+        width: 80%;
+        background: #dfdfdf;
+        margin-left: 36px;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .three-login, .two-login, .one-login {
+        width: 32%;
+    }
+
+    .btnMarginLeft {
+        margin-left: 12%;
+    }
+
+    .mediaBtnMarginTop {
+        margin-top: 5px;
+    }
+
+    form {
+        padding: 12% 8%;
+        height: 21em;
+    }
+
+    .submit.two input[type="submit"] {
+        font-size: 30px;
+        font-weight: 400;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        padding: 13px 10px;
+        width: 50px;
+        height: 50px;
+        border: none;
+        background: #702c91;
+    }
+
+    input[type="password"] {
+        width: 50%;
+        padding: 0.2em 1.7em 0.2em 1.7em;
+        color: #858282;
+        font-size: 40px;
+        outline: none;
+        background: none;
+        font-weight: 500;
+        border: none;
+        margin-left: 15%;
+    }
+
+    form li {
+        border: none;
+        list-style: none;
+        margin-bottom: 25px;
+        width: 80%;
+        background: #dfdfdf;
+        margin-left: 28px;
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width:860px) {
+    .three-login, .two-login, .one-login {
+        width: 32%;
+    }
+
+    .btnMarginLeft {
+        margin-left: 15%;
+    }
+
+    .login-02 {
+        margin-top: -2em;
+    }
+
+    .mediaBtnMarginTop {
+        margin-top: -10px;
+    }
+
+    form {
+        padding: 12% 8%;
+        height: 15em;
+    }
+
+    .submit.two input[type="submit"] {
+        font-size: 10px;
+        font-weight: 400;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        padding: 10px 10px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: #702c91;
+    }
+
+    input[type="password"] {
+        width: 50%;
+        padding: 0.2em 1.7em 0.2em 1.7em;
+        color: #858282;
+        font-size: 20px;
+        outline: none;
+        background: none;
+        font-weight: 500;
+        border: none;
+        margin-left: 15%;
+    }
+
+    form li {
+        border: none;
+        list-style: none;
+        margin-bottom: 25px;
+        width: 80%;
+        background: #dfdfdf;
+        margin-left: 20PX;
+        margin-top: 0px;
+    }
+
+    .two-login-head h2 {
+        font-size: 1em;
+        color: #fff;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .three-login, .two-login, .one-login {
+        width: 32%;
+    }
+
+    .btnMarginLeft {
+        margin-left: 15%;
+    }
+
+    .login-02 {
+        margin-top: -2em;
+    }
+
+    .mediaBtnMarginTop {
+        margin-top: -10px;
+    }
+
+    form {
+        padding: 12% 8%;
+        height: 14em;
+    }
+
+    .submit.two input[type="submit"] {
+        font-size: 10px;
+        font-weight: 400;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        padding: 5px 5px;
+        width: 25px;
+        height: 25px;
+        border: none;
+        background: #702c91;
+    }
+
+    input[type="password"] {
+        width: 50%;
+        padding: 0.2em 1.7em 0.2em 1.7em;
+        color: #858282;
+        font-size: 20px;
+        outline: none;
+        background: none;
+        font-weight: 500;
+        border: none;
+        margin-left: 15%;
+    }
+
+    form li {
+        border: none;
+        list-style: none;
+        margin-bottom: 25px;
+        width: 80%;
+        background: #dfdfdf;
+        margin-left: 20PX;
+        margin-top: 0px;
+    }
+
+    .two-login-head h2 {
+        font-size: 1em;
+        color: #fff;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .three-login, .two-login, .one-login {
+        width: 32%;
+    }
+
+    .btnMarginLeft {
+        margin-left: 20%;
+    }
+
+    .login-02 {
+        margin-top: -2em;
+    }
+
+    .mediaBtnMarginTop {
+        margin-top: -10px;
+    }
+
+    form {
+        padding: 12% 8%;
+        height: 12em;
+    }
+
+    .submit.two input[type="submit"] {
+        font-size: 10px;
+        font-weight: 400;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        padding: 5px 5px;
+        width: 20px;
+        height: 20px;
+        border: none;
+        background: #702c91;
+    }
+
+    input[type="password"] {
+        width: 50%;
+        padding: 0.2em 1.7em 0.2em 1.7em;
+        color: #858282;
+        font-size: 20px;
+        outline: none;
+        background: none;
+        font-weight: 500;
+        border: none;
+        margin-left: 15%;
+    }
+
+    form li {
+        border: none;
+        list-style: none;
+        margin-bottom: 25px;
+        width: 80%;
+        background: #dfdfdf;
+        margin-left: 15px;
+        margin-top: 0px;
+    }
+
+    .two-login-head h2 {
+        font-size: 1em;
+        color: #fff;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-device-width: 768px) {
+
+    .three-login, .two-login, .one-login {
+        width: 70% !important;
+    }
+
+    .two-login-head h2 {
+        font-size: 4.5em;
+        color: #fff;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    img {
+        width: 150px !important;
+    }
+
+    .two-login-head {
+        background: #702c91;
+        padding: 1em 1em;
+        text-align: center;
+        position: relative;
+        height: 15em;
+    }
+
+    form {
+        padding: 12% 8%;
+        height: 52em;
+    }
+
+    .login-02 {
+        margin-top: 15em;
+    }
+
+    .submit.two input[type="submit"] {
+        font-size: 50px;
+        font-weight: 400;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        padding: 14px 10px;
+        width: 120px;
+        height: 120px;
+        border: none;
+        background: #702c91;
+    }
+
+    .submit.two {
+        border: none;
+        padding: 20px 25px 5px 5px;
+        float: left;
+    }
+
+    .btnMarginLeft {
+        margin-left: 11%;
+    }
+
+    form li {
+        border: none;
+        list-style: none;
+        margin-bottom: 25px;
+        width: 80%;
+        background: #dfdfdf;
+        margin-left: 50px;
+        margin-top: 15px;
+    }
+
+    input[type="password"] {
+        width: 50%;
+        padding: 0.2em 1.7em 0.2em 1.7em;
+        color: #858282;
+        font-size: 80px;
+        outline: none;
+        background: none;
+        font-weight: 500;
+        border: none;
+        margin-left: 7%;
+    }
+
+    .mediaBtnMarginTop {
+        margin-top: 50px;
+    }
+}
